@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dcm-wrapper dcm-arabic">
+        <div class="dcm-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="dcm-header">
+                                <img src="https://i.imgur.com/5wgQz5e.png" alt="">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-title">
+                                <h2>تقرير أداء إعلانك الأسبوعي لـ [ماركة السيارة] [موديل السيارة] [سنة الموديل]</h2>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-car-info">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 30%;">
+                                                <div class="dcm-car-img">
+                                                    <img src="{{ image_url }}" alt="">
+                                                </div>
+                                            </td>
+                                            <td style="width: 70%; padding-left: 15px;">
+                                                <div class="dcm-car-content">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="dcm-car-title">
+                                                                        <a href="{{url}}">
+                                                                            <h3>{{title}}</h3>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+
+                                                                    <div class="dcm-car-price">{{price}}</div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="dcm-car-meta">
+                                                                        <table>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="dcm-car-meta-item">
+                                                                                            <img src="https://i.imgur.com/DWmR9fJ.png"
+                                                                                                alt="">
+                                                                                            <span>{{location}}</span>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="dcm-car-meta-item">
+                                                                                            <img src="https://i.imgur.com/ht6hqaf.png"
+                                                                                                alt="">
+                                                                                            <span>{{year}} </span>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="dcm-car-meta-item">
+                                                                                            <img src="https://i.imgur.com/DAi3RIT.png"
+                                                                                                alt="">
+                                                                                            <span>{{speed}}</span>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-message">
+                                <p>
+                                    <b>عزيزي [اسم البائع]،</b>,<br>
+                                    {{message}}
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-values">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="dcm-values-item">
+                                                    <span class="dcm-values-title">عدد الظهور في البحث</span>
+                                                    <span class="dcm-values-number">[عدد المرات التي ظهر فيها إعلانك في نتائج البحث]</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dcm-values-item">
+                                                    <span class="dcm-values-title">مشاهدات تفاصيل الإعلان</span>
+                                                    <span class="dcm-values-number">[عدد المرات التي تم فيها فتح إعلانك]</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dcm-values-item">
+                                                    <span class="dcm-values-title">العملاء المحتملون</span>
+                                                    <span class="dcm-values-number">[عدد العملاء المحتملين الذين تلقيتهم]</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dcm-values-item">
+                                                    <span class="dcm-values-title">معدل التحويل
+                                                        <span> [النسبة المئوية للمستخدمين الذين تواصلوا معك من بين الذين فتحوا إعلانك]</span>
+                                                    </span>
+                                                    <span class="dcm-values-number">{{CTR_value}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dcm-values-item">
+                                                    <span class="dcm-values-title">معدل التحويل
+                                                        <span>كن على اطلاع دائم بأداء إعلانك وصل إلى المشترين المحتملين بكفاءة أكبر!</span>
+                                                    </span>
+                                                    <span class="dcm-values-number">{{conversion_rate_value}}</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-cta">
+                                <a href="{{add_url}}">View my Ad</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-app">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h2>Get the Dubicars mobile app</h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Buy &amp; Sell Cars faster and better using our App</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="dcm-app-links">
+                                                    <a href="#">
+                                                        <img src="https://i.imgur.com/VdiUr3i.png" alt="">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://i.imgur.com/pnt7vEu.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-social-icons">
+                                <a href="#">
+                                    <img src="https://i.imgur.com/blqNMqn.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="https://i.imgur.com/OD1RRVe.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="https://i.imgur.com/x8UhocV.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="https://i.imgur.com/x8UhocV.png" alt="">
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dcm-footer">
+                                <p>If you want to stop receiving this alert, <a href="click here"></a></p>
+                                <hr>
+                                <p>Dubicars.com @ 2023. All rights reserved. Address: 1309, Shatha Tower, Media City,
+                                    Dubai, UAE</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

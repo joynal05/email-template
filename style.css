@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    color: #494949;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dcm-wrapper {
+    width: calc(90% - 20px);
+    max-width: 600px;
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+}
+
+.dcm-container {
+    width: 100%;
+}
+
+.dcm-header img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.dcm-header {
+    background: #2C3948;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.dcm-title {
+    margin: 20px 0;
+}
+
+.dcm-car-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.dcm-car-img {
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.dcm-car-img img {
+    max-width: 100%;
+}
+
+.dcm-car-title h3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.dcm-car-meta ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 10px 0 0px;
+    font-size: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dcm-car-meta ul li i {
+    margin-right: 5px;
+}
+
+.dcm-car-meta ul li {
+    border-right: 1px solid #ddd;
+    padding-right: 10px;
+    color: #999;
+    font-weight: bold;
+    display: flex;
+}
+
+.dcm-car-price {
+    font-size: 20px;
+    color: #F14B6A;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.dcm-values ul {
+    list-style: none;
+}
+
+.dcm-values ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    padding-bottom: 7px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dcm-cta a {
+    background: #F14B6A;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    padding: 11px 0;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.dcm-app {
+    background: #F8F8F8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.dcm-app-links {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.dcm-app-links a {
+    width: 120px;
+}
+
+.dcm-app-links img {
+    width: 100%;
+}
+
+.dcm-app>h2 {
+    color: #f14b6a;
+    font-size: 22px;
+}
+
+.dcm-social-icons {
+    font-size: 24px;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.dcm-social-icons i {
+    color: #f14b6a;
+}
+
+.dcm-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #ddd;
+    margin: 0 0 50px 0;
+}
+
+.dcm-title h2 {
+    font-size: 20px;
+}
+
+.dcm-car-meta ul li:last-child {
+    border: none;
+}
+
+.dcm-car-meta ul li i,
+.dcm-car-meta ul li span {
+    color: #999;
+}
+
+.dcm-message {
+    margin-bottom: 30px;
+}
+
+span.dcm-values-title span {
+    display: block;
+    font-size: 14px;
+    color: #999;
+}
+
+.dcm-car-meta {
+    margin-top: 9px;
+}
+
+.dcm-car-meta img {
+    height: 16px;
+    width: 15px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.dcm-car-meta-item {
+    display: block;
+    margin-right: 10px;
+    border-right: 1px solid #999;
+    padding-right: 10px;
+}
+
+.dcm-car-meta-item span {
+    line-height: 1;
+}
+
+span.dcm-values-title {
+    float: left;
+    width: 80%;
+}
+
+span.dcm-values-number {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+.dcm-values-item {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.dcm-app-links img {
+    width: 120px;
+}
+
+.dcm-footer p {
+    margin: 5px 0;
+}
+
+.dcm-social-icons a {
+    margin: 0 010px;
+    color: transparent;
+}
+
+table {
+    width: 100%;
+}
+
+.dcm-car-meta td:last-child .dcm-car-meta-item {
+    border: none;
+}
+
+.dcm-car-meta>table {
+    width: auto;
+}
+
+.dcm-car-meta td {
+    display: inline-block;
+}
+
+/* Arabic */
+.dcm-arabic .dcm-title {
+    text-align: right;
+}
+
+/* Arabic */
+
+@media only screen and (max-width: 620px) {
+    .dcm-car-info tr td {
+        width: 100% !important;
+        display: block;
+    }
+
+    .dcm-car-img {
+        max-width: 100%;
+    }
+
+    .dcm-car-content td {
+        width: unset;
+    }
+
+    .dcm-car-info .dcm-car-meta tr td {
+        width: unset !important;
+        display: inline-block !important;
+    }
+
+    .dcm-car-info tr td {
+        padding-left: unset !important;
+    }
+}
+
+
