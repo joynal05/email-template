@@ -262,6 +262,49 @@ table {
     text-align: right;
 }
 
+.dcm-arabic .dcm-car-content {
+    text-align: right;
+}
+
+.dcm-arabic .dcm-car-meta {
+}
+
+.dcm-arabic .dcm-car-meta>table {
+    float: right;
+}
+
+.dcm-arabic .dcm-car-meta-item {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.dcm-arabic .dcm-car-meta td:last-child .dcm-car-meta-item {
+    padding: 0;
+}
+
+.dcm-arabic .dcm-message {
+    text-align: right;
+}
+.dcm-arabic span.dcm-values-title {
+    float: right !important;
+    text-align: right;
+}
+
+.dcm-arabic span.dcm-values-number {
+    float: left;
+    text-align: left;
+}
+.dcm-arabic span.dcm-values-title {
+    float: right;
+    text-align: right;
+}
+
+.dcm-arabic span.dcm-values-number {
+    float: left;
+    text-align: left;
+}
 /* Arabic */
 
 @media only screen and (max-width: 620px) {
